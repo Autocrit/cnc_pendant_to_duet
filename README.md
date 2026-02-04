@@ -1,2 +1,73 @@
-# cnc_pendant_to_duet3D
+# CNC Pendant to Duet3D PCB
 
+![Usage](./images/overview.jpg)
+
+## Warnings
+
+1. Other CNC pendants may have different pin arrangements; check with a multimeter. The pendant should use 5V.
+1. This PCB was tested with a Duet 3, but not with a Duet 2.
+1. I'm a PCB novice! Use at your own risk!
+
+## Overview
+
+The goal of the PCB is to simplify connection of a CNC pendant (assuming the pins match, of course), and to provide a disconnect at the control enclosure.
+
+It follows the wiring diagram and instructions at [Duet3D CNC Pendant Documentation](https://docs.duet3d.com/User_manual/Connecting_hardware/IO_CNC_Pendant).
+
+## Mounting
+
+The PCB can be mounted to the inside of an enclosure using the hex studs of the D‑sub connector. Alternatively, it could be mounted internally with an extension cable.
+
+[Cutout DXF](./cad/dsub15_panel_cutout.dxf)
+
+## Pendant
+
+This is the pendant I have [Universal CNC 4 Axis MPG Pendant - Connector Style](https://www.aliexpress.com/item/32847286243.html) from [Rattm Motor Store](https://www.aliexpress.com/store/907217) on Aliexpress.
+
+## PCB components
+
+| Reference | Description |
+|---------- | ------- |
+| U1 | Arduino Pro Micro |
+| R1 | 1206 SMD 6K8 (6.8kΩ) resistor |
+| R2 | 1206 SMD 10K (10kΩ) resistor |
+| J1 | 1x4 2.54mm pitch right angle male header |
+| J2 | 15-pin D-Sub female right-angle connector with hex screws |
+
+### Resistors
+
+The resistors are optional when connecting to a Duet 3. If omitted, the pads should be bridged (see image): ![Bridge resistors](./images/bridge.png)
+
+### 1x4 male header
+
+The 1x4 pin, 2.54mm pitch, male header can be any make or type. A right-angle connector keeps the height low.
+
+#### Vertical
+
+[Würth Elektronik WR-WTB 61900411121](https://www.we-online.com/en/components/products/WTB_WR_WTB_2_54_MALE#61900411121)
+
+#### Horizontal
+
+[Würth Elektronik WR-WTB 61900411021](https://www.we-online.com/en/components/products/WTB_WR_WTB_2_54_MALE#61900411021).
+
+[Würth Elektronik WR-WTB 61900419521](https://www.we-online.com/en/components/products/WTB_WR_WTB_2_54_MALE#61900419521)
+
+#### CNC Pendant PCB to Duet
+
+[Connector and spare part numbers](https://docs.duet3d.com/User_manual/Troubleshooting/Parts).
+
+[Würth Elektronik WR-WTB 4-pin 61900411621](https://www.we-online.com/en/components/products/WTB_2_54_FEMALE_TERMINAL_HOUSING_6190XX11621#61900411621)
+
+[Würth Elektronik WR-WTB 5-pin 61900511621](https://www.we-online.com/en/components/products/WTB_2_54_FEMALE_TERMINAL_HOUSING_6190XX11621#61900511621)
+
+### 15-pin female D-Sub connector
+
+e.g. [Würth Elektronik WR-DSUB PCB 618015231121](https://www.we-online.com/en/components/products/INPUT_OUTPUT_WR_DSUB_CONNECTORS_PCB#618015231121).
+
+![Hole pattern](./images/618015231121_hole_pattern.png)
+
+The mounting‑hole‑to‑board‑edge dimension appears to be a common one, so (cheaper) alternatives should be available.
+
+## Feedback
+
+As already stated, I'm a PCB novice (e.g. I used auto-routing). Constructive feedback and improvements are welcome.
