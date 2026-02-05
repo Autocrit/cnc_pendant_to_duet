@@ -1,0 +1,6 @@
+﻿Designator,Footprint,Quantity,Value,LCSC Part #
+J1,61900411021,1,Conn_01x04_Male,
+J2,DSUB-15_Socket_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm,1,DA15_Socket_MountingHoles,
+R1,1206,1,6K8,
+R2,1206,1,10K,
+U1,Sparkfun_Pro_Micro,1,Sparkfun_Pro_Micro,

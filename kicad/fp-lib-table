@@ -1,0 +1,5 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "61900411021")(type "KiCad")(uri "${KIPRJMOD}/61900411021")(options "")(descr ""))
+  (lib (name "cnc_pendant_to_duet3D")(type "KiCad")(uri "${KIPRJMOD}/cnc_pendant_to_duet3D.pretty")(options "")(descr ""))
+)

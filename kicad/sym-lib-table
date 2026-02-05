@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "cnc_pendant_to_duet3D")(type "KiCad")(uri "${KIPRJMOD}/cnc_pendant_to_duet3D.kicad_sym")(options "")(descr ""))
+)
