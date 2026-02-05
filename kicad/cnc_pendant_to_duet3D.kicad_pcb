@@ -162,7 +162,7 @@
 		(property ki_fp_filters "MountingHole*")
 		(path "/45eefb9e-d3f7-4c02-bed7-1cde04f327d8")
 		(sheetname "/")
-		(sheetfile "cnc_pendant_to_duet3D.kicad_sch")
+		(sheetfile "cnc_pendant_to_duet3d.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
@@ -264,7 +264,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/e876c987-9b81-443b-b222-5721d7ae2d87")
 		(sheetname "/")
-		(sheetfile "cnc_pendant_to_duet3D.kicad_sch")
+		(sheetfile "cnc_pendant_to_duet3d.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.727064 -0.91)
@@ -407,7 +407,7 @@
 		(property ki_fp_filters "MountingHole*")
 		(path "/cc88942b-8e78-4836-b9a3-eab3986e0d55")
 		(sheetname "/")
-		(sheetfile "cnc_pendant_to_duet3D.kicad_sch")
+		(sheetfile "cnc_pendant_to_duet3d.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
@@ -510,7 +510,7 @@
 		(property ki_fp_filters "MountingHole*")
 		(path "/e12a36e7-29ad-49dc-8c0d-3f0987cd08ef")
 		(sheetname "/")
-		(sheetfile "cnc_pendant_to_duet3D.kicad_sch")
+		(sheetfile "cnc_pendant_to_duet3d.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
@@ -613,7 +613,7 @@
 		(property ki_fp_filters "MountingHole*")
 		(path "/dbd8b68d-e8d2-4559-bb7a-429b98f293bd")
 		(sheetname "/")
-		(sheetfile "cnc_pendant_to_duet3D.kicad_sch")
+		(sheetfile "cnc_pendant_to_duet3d.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
@@ -659,7 +659,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "cnc_pendant_to_duet3D:61900411021"
+	(footprint "cnc_pendant_to_duet3d:61900411021"
 		(layer "F.Cu")
 		(uuid "cd89b81a-716f-4ab0-aa9b-c4c9b0babb73")
 		(at 122.65 83 -90)
@@ -816,7 +816,7 @@
 		)
 		(path "/6fb4d23b-8395-4139-916e-629eb924c612")
 		(sheetname "/")
-		(sheetfile "cnc_pendant_to_duet3D.kicad_sch")
+		(sheetfile "cnc_pendant_to_duet3d.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -4.23 9.95)
@@ -1544,7 +1544,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/52fa4a69-fb6c-453a-90c0-ada86c20d9b6")
 		(sheetname "/")
-		(sheetfile "cnc_pendant_to_duet3D.kicad_sch")
+		(sheetfile "cnc_pendant_to_duet3d.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.727064 -0.91)
@@ -1630,7 +1630,7 @@
 			)
 		)
 	)
-	(footprint "cnc_pendant_to_duet3D:Sparkfun_Pro_Micro"
+	(footprint "cnc_pendant_to_duet3d:Sparkfun_Pro_Micro"
 		(layer "F.Cu")
 		(uuid "e93464cb-238c-4335-9fa4-4084b2dc1a87")
 		(at 139 97.62 90)
@@ -1697,7 +1697,7 @@
 		)
 		(path "/86451a79-68a1-401c-a698-cda040d68072")
 		(sheetname "/")
-		(sheetfile "cnc_pendant_to_duet3D.kicad_sch")
+		(sheetfile "cnc_pendant_to_duet3d.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 16.637 -1.27)
@@ -2323,7 +2323,7 @@
 		(property ki_fp_filters "DSUB*Socket*")
 		(path "/0159e412-6bb3-4bf5-8273-56abf75e52b5")
 		(sheetname "/")
-		(sheetfile "cnc_pendant_to_duet3D.kicad_sch")
+		(sheetfile "cnc_pendant_to_duet3d.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 9.965 -1.86)

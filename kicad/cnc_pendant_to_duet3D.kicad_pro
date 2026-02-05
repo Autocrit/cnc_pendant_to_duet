@@ -464,7 +464,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "cnc_pendant_to_duet3D.kicad_pro",
+    "filename": "cnc_pendant_to_duet3d.kicad_pro",
     "version": 3
   },
   "net_settings": {
