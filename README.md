@@ -12,6 +12,7 @@ It follows the wiring diagram and instructions at [Duet3D CNC Pendant Documentat
 
 1. Other CNC pendants may have different pin arrangements; check with a multimeter. The pendant should use 5V.
 1. This PCB was tested with a Duet 3, but not with a Duet 2.
+1. There's a small change to the Arduino code due to the fact that there is no X1 multiplier wire or signal. 
 1. I don't know what I'm doing. Use at your own risk.
 
 ## Pendant
@@ -48,7 +49,7 @@ The PCB can be mounted to the inside of an enclosure using the hex studs of the 
 
 ### Resistors (R1 & R2)
 
-The resistors are optional when connecting to a Duet 3. If omitted, the pads should be bridged (see image)
+The resistors are optional when connecting to a Duet 3. If omitted, the pads of R1 should be bridged (see image).
 ![Bridge resistors](./images/bridge.png)
 
 ### 1x4 header (J1)
@@ -83,6 +84,17 @@ e.g. [Würth Elektronik WR-WTB 5-pin 61900511621](https://www.we-online.com/en/c
 
 e.g. [Würth Elektronik WR-WTB female crimp 61900113722DEC](https://www.we-online.com/en/components/products/WTB_2_54_FEMALE_CRIMP_CONTACT_619X0113722#61900113722DEC)
 
-## Feedback
+## Firmware
 
-As already stated, I'm a PCB novice (e.g. I used auto-routing). Constructive feedback and improvements are welcome.
+CNC-pendant.ino line 221
+
+```cpp
+distanceMultiplier = 0;
+```
+
+change to
+
+```cpp
+distanceMultiplier = 1;
+```
+
