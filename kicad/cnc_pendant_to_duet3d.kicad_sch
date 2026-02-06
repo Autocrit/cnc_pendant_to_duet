@@ -2552,7 +2552,7 @@
 		)
 		(uuid "4a0e5052-b009-4d0e-b986-ce733531bb14")
 	)
-	(label "io0.out"
+	(label "DOUT"
 		(at 82.55 86.36 180)
 		(effects
 			(font
