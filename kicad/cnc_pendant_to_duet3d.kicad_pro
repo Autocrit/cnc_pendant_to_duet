@@ -547,7 +547,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "cnc_pendant_to_Duet3D.step",
+      "step": "cnc_pendant_to_Duet3d.step",
       "svg": "",
       "vrml": ""
     },
