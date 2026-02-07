@@ -1,6 +1,6 @@
 # CNC Pendant to Duet3D PCB
 
-![Usage](./images/overview.jpg)
+<img src="./images/top_render.jpg" width="800" />
 
 ## Overview
 
@@ -10,14 +10,14 @@ It follows the wiring diagram and instructions at [Duet3D CNC Pendant Documentat
 
 ## Notes
 
-1. Other pendants with a D-Sub connector may have different pin arrangements (I would check at least the +5V line before applying power).
+1. Other pendants with a D-Sub connector may have different pin arrangements.
 1. This PCB was tested with a Duet 3, but not with a Duet 2 nor a PanelDue.
 1. There is a small change needed to the Arduino firmware. 
 1. I don't know what I'm doing. Use at your own risk.
 
 ## Pendant
 
-The pendant I have is from Rattm Motor Store on Aliexpress.
+I have [this](https://www.aliexpress.com/item/32847286243.html) pendant from [Rattm Motor Store](https://www.aliexpress.com/store/907217) on Aliexpress (the listing says 4 axis but this one has a 5 axis switch).
 
 <img src="./images/pendant_internal.jpg" width="600" />
 
@@ -27,7 +27,7 @@ The image shows a female socket as you look at it:
 
 <img src="./images/da-15.png" width="600" />
 
-GND, COM- and the connector body are all connected to ground on the PCB.
+GND, COM- and shield are all connected to ground on the PCB.
 
 The connector pinout can be checked against the pads in the pendant.
 
