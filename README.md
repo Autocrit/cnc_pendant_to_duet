@@ -10,34 +10,40 @@ It follows the wiring diagram and instructions at [Duet3D CNC Pendant Documentat
 
 ## Notes
 
-1. Other CNC pendants may have different pin arrangements; check with a multimeter. The pendant should use 5V.
-1. This PCB was tested with a Duet 3, but not with a Duet 2.
-1. There's a small change to the Arduino code due to the fact that there is no X1 multiplier wire or signal. 
+1. Other pendants with a D-Sub connector may have different pin arrangements (I would check at least the +5V line before applying power).
+1. This PCB was tested with a Duet 3, but not with a Duet 2 nor a PanelDue.
+1. There is a small change needed to the Arduino firmware. 
 1. I don't know what I'm doing. Use at your own risk.
 
 ## Pendant
 
 The pendant I have is from Rattm Motor Store on Aliexpress.
 
+<img src="./images/pendant_internal.jpg" width="600" />
+
 ### D-Sub pins
 
 The image shows a female socket as you look at it:
 
-![DA-15](./images/da-15.png)
+<img src="./images/da-15.png" width="600" />
 
-GND, COM- and the connector body are connected to ground on the PCB.
+GND, COM- and the connector body are all connected to ground on the PCB.
+
+The connector pinout can be checked against the pads in the pendant.
+
+<img src="./images/pads.jpg" width="600" />
 
 ## Mounting
 
 The PCB can be mounted to the inside of an enclosure using the hex studs of the D‑sub connector. Alternatively, it could be mounted internally with an extension cable.
 
-![Dimensions](./images/drawing.png)
+<img src="./images/drawing.png" width="600" />
 
 [Cutout DXF](./cad/dsub15_panel_cutout.dxf)
 
 ## PCB components
 
-![PCB components](./images/reference.png)
+<img src="./images/reference.png" width="600" />
 
 | Reference | Description |
 |---------- | ------- |
@@ -50,7 +56,8 @@ The PCB can be mounted to the inside of an enclosure using the hex studs of the 
 ### Resistors (R1 & R2)
 
 The resistors are optional when connecting to a Duet 3. If omitted, the pads of R1 should be bridged (see image).
-![Bridge resistors](./images/bridge.png)
+
+<img src="./images/bridge.png" width="600" />
 
 ### 1x4 header (J1)
 
@@ -70,7 +77,7 @@ or [Würth Elektronik WR-WTB 61900419521](https://www.we-online.com/en/component
 
 e.g. [Würth Elektronik WR-DSUB PCB 618015231121](https://www.we-online.com/en/components/products/INPUT_OUTPUT_WR_DSUB_CONNECTORS_PCB#618015231121).
 
-![Hole pattern](./images/618015231121_hole_pattern.png)
+<img src="./images/618015231121_hole_pattern.png" width="600" />
 
 The mounting‑hole‑to‑board‑edge dimension appears to be a common one, so (cheaper) alternatives should be available.
 
@@ -86,15 +93,19 @@ e.g. [Würth Elektronik WR-WTB female crimp 61900113722DEC](https://www.we-onlin
 
 ## Firmware
 
-CNC-pendant.ino line 221
-
-```cpp
-distanceMultiplier = 0;
+In `CNC-pendant.ino`, change line 221 to:
 ```
-
-change to
-
-```cpp
 distanceMultiplier = 1;
 ```
 
+The reason for this is that there is no X1 pin (or signal) and the code is unable to detect that X1 is selected. Initialising `distanceMultiplier` to `1` instead of `0` solves that.
+
+In addition, the firmware is unable to control the pendant's LED (i.e. turned off on emergency stop) as there is no LED+ signal.
+
+## config.g
+
+The Duet3D pendant document doesn't mention that serial communication needs to be enabled on io0 on Duet 3 e.g.:
+```
+; Accessories
+M575 P1 S1 B57600 ; CNC pendant support
+```
