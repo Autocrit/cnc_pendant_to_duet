@@ -44,7 +44,7 @@ The PCB can be mounted to the inside of an enclosure using the hex studs of the 
 [DXF](./cad/panel_cutout.dxf)
 [PDF](./cad/panel_cutout.pdf)
 
-### Dimensions
+### PCB dimensions and hole spacing
 
 <img src="./images/drawing.png" width="800" />
 
