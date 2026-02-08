@@ -46,11 +46,11 @@ The PCB can be mounted to the inside of an enclosure using the hex studs of the 
 
 ### Dimensions
 
-<img src="./images/drawing.png" width="600" />
+<img src="./images/drawing.png" width="800" />
 
 ## PCB components
 
-<img src="./images/reference.png" width="600" />
+<img src="./images/reference.png" width="800" />
 
 | Reference | Description |
 |---------- | ------- |
