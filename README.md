@@ -10,7 +10,7 @@ It follows the wiring diagram and instructions at [Duet3D CNC Pendant Documentat
 
 ## Notes
 
-1. Other may have different pin arrangements.
+1. Other CNC pendants may have different pin arrangements.
 1. This PCB was tested with a Duet 3, but not with a Duet 2 or a PanelDue.
 1. There is a small change needed to the Arduino firmware. 
 1. I don't know what I'm doing. Use at your own risk.
