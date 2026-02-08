@@ -37,9 +37,16 @@ The connector pinout can be checked against the pads in the pendant.
 
 The PCB can be mounted to the inside of an enclosure using the hex studs of the D‑sub connector. Alternatively, it could be mounted internally with an extension cable.
 
-<img src="./images/drawing.png" width="600" />
+### Cutout
 
-[Cutout DXF](./cad/dsub15_panel_cutout.dxf)
+<img src="./images/cutout_drawing.png" width="800" />
+
+[DXF](./cad/panel_cutout.dxf)
+[PDF](./cad/panel_cutout.pdf)
+
+### Dimensions
+
+<img src="./images/drawing.png" width="600" />
 
 ## PCB components
 
