@@ -4,20 +4,20 @@
 
 ## Overview
 
-The goal of the PCB is to simplify connection of a CNC pendant (assuming the pins match, of course), and to provide a disconnect at the control enclosure.
+The goal of the PCB is to simplify the connection of a CNC pendant to a Duet 2 or 3 and to provide a disconnect at the control enclosure.
 
 It follows the wiring diagram and instructions at [Duet3D CNC Pendant Documentation](https://docs.duet3d.com/User_manual/Connecting_hardware/IO_CNC_Pendant).
 
 ## Notes
 
-1. Other pendants with a D-Sub connector may have different pin arrangements.
-1. This PCB was tested with a Duet 3, but not with a Duet 2 nor a PanelDue.
+1. Other may have different pin arrangements.
+1. This PCB was tested with a Duet 3, but not with a Duet 2 or a PanelDue.
 1. There is a small change needed to the Arduino firmware. 
 1. I don't know what I'm doing. Use at your own risk.
 
 ## Pendant
 
-I have [this](https://www.aliexpress.com/item/32847286243.html) pendant from [Rattm Motor Store](https://www.aliexpress.com/store/907217) on Aliexpress (the listing says 4 axis but this one has a 5 axis switch).
+I have [this](https://www.aliexpress.com/item/32847286243.html) pendant from [Rattm Motor Store](https://www.aliexpress.com/store/907217) on Aliexpress (the listing says 4-axis but this one has a 5-axis switch).
 
 <img src="./images/pendant_internal.jpg" width="600" />
 
@@ -27,7 +27,7 @@ The image shows a female socket as you look at it:
 
 <img src="./images/da-15.png" width="600" />
 
-GND, COM- and shield are all connected to ground on the PCB.
+GND, COM-, and shield are all connected to ground on the PCB.
 
 The connector pinout can be checked against the pads in the pendant.
 
@@ -48,7 +48,7 @@ The PCB can be mounted to the inside of an enclosure using the hex studs of the 
 
 <img src="./images/drawing.png" width="800" />
 
-## PCB components
+## Components
 
 <img src="./images/reference.png" width="800" />
 
@@ -107,11 +107,11 @@ distanceMultiplier = 1;
 
 The reason for this is that there is no X1 pin (or signal) and the code is unable to detect that X1 is selected. Initialising `distanceMultiplier` to `1` instead of `0` solves that.
 
-In addition, the firmware is unable to control the pendant's LED (i.e. turned off on emergency stop) as there is no LED+ signal.
+In addition, the firmware is unable to control the pendant's LED (for example, to turn it off on an emergency stop) because there is no LED+ signal.
 
 ## config.g
 
-The Duet3D pendant document doesn't mention that serial communication needs to be enabled on io0 on Duet 3 e.g.:
+The Duet3D pendant documentation doesn't mention that serial communication needs to be enabled on io0 on Duet 3. For example:
 ```
 ; Accessories
 M575 P1 S1 B57600 ; CNC pendant support
