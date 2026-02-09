@@ -17,21 +17,23 @@ It follows the wiring diagram and instructions at [Duet3D CNC Pendant Documentat
 
 ## Pendant
 
-I have [this](https://www.aliexpress.com/item/32847286243.html) pendant from [Rattm Motor Store](https://www.aliexpress.com/store/907217) on Aliexpress (the listing says 4-axis but this one has a 5-axis switch).
+I have [this](https://www.aliexpress.com/item/32847286243.html) pendant from [Rattm Motor Store](https://www.aliexpress.com/store/907217) on Aliexpress (the listing says 4-axis but the one I received is 5-axis).
 
-<img src="./images/pendant_internal.jpg" width="600" />
+<img src="./images/pendant_internal.jpg" width="800" />
 
 ### D-Sub pins
 
-The image shows a female socket as you look at it:
+<img src="./images/plug_internal.jpg" width="800" />
 
-<img src="./images/da-15.png" width="600" />
+The image below shows a female socket as you look at it:
+
+<img src="./images/da-15.png" width="800" />
 
 GND, COM-, and shield are all connected to ground on the PCB.
 
 The connector pinout can be checked against the pads in the pendant.
 
-<img src="./images/pads.jpg" width="600" />
+<img src="./images/pads.jpg" width="800" />
 
 ## Mounting
 
@@ -50,7 +52,7 @@ The PCB can be mounted to the inside of an enclosure using the hex studs of the 
 
 ## Components
 
-<img src="./images/reference.png" width="800" />
+<img src="./images/reference_blue.png" width="800" />
 
 | Reference | Description |
 |---------- | ------- |
@@ -64,7 +66,7 @@ The PCB can be mounted to the inside of an enclosure using the hex studs of the 
 
 The resistors are optional when connecting to a Duet 3. If omitted, the pads of R1 should be bridged (see image).
 
-<img src="./images/bridge.png" width="600" />
+<img src="./images/bridge.png" width="800" />
 
 ### 1x4 header (J1)
 
@@ -77,7 +79,7 @@ Würth Elektronik WR-WTB [61900411021](https://www.we-online.com/en/components/p
 
 e.g. Würth Elektronik WR-DSUB PCB [618015231121](https://www.we-online.com/en/components/products/INPUT_OUTPUT_WR_DSUB_CONNECTORS_PCB#618015231121).
 
-<img src="./images/618015231121_hole_pattern.png" width="600" />
+<img src="./images/618015231121_hole_pattern.png" width="800" />
 
 The mounting‑hole‑to‑board‑edge dimension appears to be a common one, so (cheaper) alternatives should be available.
 

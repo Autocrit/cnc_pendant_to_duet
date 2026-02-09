@@ -9,10 +9,5 @@ kicad/cnc_pendant_to_duet3d.bak
 .DS_Store
 /kicad/cnc_pendant_to_duet3d-backups
 *.lck
-images/drawing.af
-images/da-15.af
-images/bridge.af
 kicad/_autosave-cnc_pendant_to_duet3d.kicad_pcb
-images/blue_grid.af
-images/cutout_drawing.af
-images/618015231121_hole_pattern.af
+*.af
