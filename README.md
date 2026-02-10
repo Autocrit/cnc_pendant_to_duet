@@ -70,26 +70,30 @@ The resistors are optional when connecting to a Duet 3. If omitted, the pads of 
 
 ### 1x4 header (J1)
 
-The 1x4 pin 2.54mm pitch male header can be any make or type. A right-angle connector keeps the height low.
+The 1x4 pin 2.54mm pitch male header for connecting to a Duet 2 or 3 can be any make or type; a right-angle connector keeps the height low.
 
-e.g. Würth Elektronik WR-WTB [61900411121](https://www.we-online.com/en/components/products/WTB_WR_WTB_2_54_MALE#61900411121) (vertical), 
+Examples are the Würth Elektronik WR-WTB [61900411121](https://www.we-online.com/en/components/products/WTB_WR_WTB_2_54_MALE#61900411121) (vertical), 
 Würth Elektronik WR-WTB [61900411021](https://www.we-online.com/en/components/products/WTB_WR_WTB_2_54_MALE#61900411021) (horizontal) or Würth Elektronik WR-WTB [61900419521](https://www.we-online.com/en/components/products/WTB_WR_WTB_2_54_MALE#61900419521) (also horizontal).
+
+KF2510 connectors are a cheaper alternative.
 
 ### D-Sub connector (J2)
 
-e.g. Würth Elektronik WR-DSUB PCB [618015231121](https://www.we-online.com/en/components/products/INPUT_OUTPUT_WR_DSUB_CONNECTORS_PCB#618015231121).
+Würth Elektronik again, the WR-DSUB PCB [618015231121](https://www.we-online.com/en/components/products/INPUT_OUTPUT_WR_DSUB_CONNECTORS_PCB#618015231121).
 
 <img src="./images/618015231121_hole_pattern.png" width="800" />
 
-The mounting‑hole‑to‑board‑edge dimension appears to be a common one, so (cheaper) alternatives should be available.
+The mounting‑hole‑to‑board‑edge dimension appears to be a common one, so alternatives should work.
 
 ## Connecting to Duet 2 or 3
 
 See [Connector and spare part numbers](https://docs.duet3d.com/User_manual/Troubleshooting/Parts).
 
-e.g. Würth Elektronik WR-WTB 4-pin [61900411621](https://www.we-online.com/en/components/products/WTB_2_54_FEMALE_TERMINAL_HOUSING_6190XX11621#61900411621), Würth Elektronik WR-WTB 5-pin [61900511621](https://www.we-online.com/en/components/products/WTB_2_54_FEMALE_TERMINAL_HOUSING_6190XX11621#61900511621) and Würth Elektronik WR-WTB female crimp [61900113722DEC](https://www.we-online.com/en/components/products/WTB_2_54_FEMALE_CRIMP_CONTACT_619X0113722#61900113722DEC).
+Würth Elektronik WR-WTB 4-pin [61900411621](https://www.we-online.com/en/components/products/WTB_2_54_FEMALE_TERMINAL_HOUSING_6190XX11621#61900411621), Würth Elektronik WR-WTB 5-pin [61900511621](https://www.we-online.com/en/components/products/WTB_2_54_FEMALE_TERMINAL_HOUSING_6190XX11621#61900511621) and Würth Elektronik WR-WTB female crimp [61900113722DEC](https://www.we-online.com/en/components/products/WTB_2_54_FEMALE_CRIMP_CONTACT_619X0113722#61900113722DEC).
 
 ## Firmware
+
+### Firmware change
 
 In `CNC-pendant.ino`, change line 221 to:
 ```
@@ -100,10 +104,15 @@ The reason for this is that there is no X1 pin (or signal) and the code is unabl
 
 In addition, the firmware is unable to control the pendant's LED (for example, to turn it off on an emergency stop) because there is no LED+ signal.
 
-## config.g
+## Config
 
 The Duet3D pendant documentation doesn't mention that serial communication needs to be enabled on io0 on Duet 3. For example:
 ```
 ; Accessories
 M575 P1 S1 B57600 ; CNC pendant support
 ```
+
+## TODO
+- test with Duet 2
+- test with PanelDue 
+- test with more than one CNC pendant
