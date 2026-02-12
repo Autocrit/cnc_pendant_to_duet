@@ -1,10 +1,10 @@
-# CNC Pendant to Duet3D PCB
+# CNC Pendant D-Sub connector to Duet3D PCB
 
-<img src="./images/top_render.jpg" width="800" />
+<img src="./images/PXL_20260212_153638222.jpg" width="800" />
 
 ## Overview
 
-The goal of the PCB is to simplify the connection of a CNC pendant to a Duet 2 or 3 and to provide a disconnect at the control enclosure.
+The aim for this PCB was to simplify the connection of a CNC pendant to a Duet 2 or 3, and to provide a disconnect at the electronics enclosure.
 
 It follows the wiring diagram and instructions at [Duet3D CNC Pendant Documentation](https://docs.duet3d.com/User_manual/Connecting_hardware/IO_CNC_Pendant).
 
@@ -15,7 +15,11 @@ It follows the wiring diagram and instructions at [Duet3D CNC Pendant Documentat
 1. There is a small change needed to the Arduino firmware. 
 1. I don't know what I'm doing. Use at your own risk.
 
-## Pendant
+## Ordering
+
+Upload `./kicad/production/cnc_pendant_to_duet3d.zip` to JLCPCB. In February 2026, 5 boards cost £3.60 including VAT and delivery to the UK.
+
+## Choice of CNC pendant
 
 I have [this](https://www.aliexpress.com/item/32847286243.html) pendant from [Rattm Motor Store](https://www.aliexpress.com/store/907217) on Aliexpress (the listing says 4-axis but the one I received is 5-axis).
 
@@ -61,6 +65,10 @@ The PCB can be mounted to the inside of an enclosure using the hex studs of the 
 | R2 | 1206 SMD 10K (10kΩ) resistor |
 | J1 | 1x4 2.54mm pitch male right-angle (optional) header |
 | J2 | 15-pin D-Sub female right-angle (optional) connector with hex screws |
+
+### Arduino Pro Micro (U1)
+
+Use 2 1x12 female headers if the Arduino should be removable.
 
 ### Resistors (R1 & R2)
 
