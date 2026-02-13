@@ -24,6 +24,8 @@ Upload `./kicad/production/cnc_pendant_to_duet3d.zip` to JLCPCB. In February 202
 
 I have [this](https://www.aliexpress.com/item/32847286243.html) pendant from [Rattm Motor Store](https://www.aliexpress.com/store/907217) on Aliexpress (the listing says 4-axis but the one I received is 5-axis).
 
+<img src="./images/PXL_20260213_123137917.jpg" width="800" />
+
 <img src="./images/pendant_internal.jpg" width="800" />
 
 ### D-Sub pins
