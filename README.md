@@ -14,7 +14,7 @@ It follows the wiring diagram and instructions at [Duet3D CNC Pendant Documentat
 1. This PCB was tested with a Duet 3, but not with a Duet 2 or a PanelDue.
 1. There is a small change needed to the Arduino firmware. 
 1. I don't know what I'm doing. Use at your own risk.
-1. There's a pin labelled *iO.out* on the PCB in these photos. That's a mistake and its corrected to *dout* in the kicad files.
+1. There's a pin labelled *iO.out* on the PCB in these photos. That's a mistake and its corrected to *dout* in the KiCad project.
 
 ## Ordering
 
