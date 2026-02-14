@@ -126,7 +126,20 @@ The Duet3D pendant documentation doesn't mention that serial communication needs
 M575 P1 S1 B57600 ; CNC pendant support
 ```
 
+## Modifying the PCB for a different pinout
+
+Anyone familiar with KiCad or PCB design should ignore this.
+1. In the Schematic Editor, change labels on the DA-15 socket as necessary.
+1. In the PCB Editor, *Tools->Update PCB from Schematic...*
+1. Delete all vias and tracks with *Edit->Global Deletions...->Tracks & vias*
+1. I would then cheat and use the *Freerouting* plugin, followed by some clean up (it  leaves unconnected tracks and other easily-fixed issues).
+1. Use *Inspect->Design Rules Checker* to help find problems.
+1. I used the *Fabrication Toolkit* plugin to generate files for JLCPCB. As its going to be an unassembled board, only the ZIP file is important.
+
+I can help if you know the pinout but don't want to dive into KiCad.
+
 ## TODO
 - test with Duet 2
 - test with PanelDue 
 - test with more than one CNC pendant
+- add pins for PanelDue wiring (if that would be useful)
