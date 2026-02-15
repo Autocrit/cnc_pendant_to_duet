@@ -2831,7 +2831,7 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "i0.in"
+	(gr_text "io0.in"
 		(at 127.3 79.7 0)
 		(layer "F.SilkS")
 		(uuid "e08fcf54-1e57-4d15-b009-f4b54a091bd9")
@@ -2917,7 +2917,7 @@
 			(justify bottom mirror)
 		)
 	)
-	(gr_text "i0.in/urxd0"
+	(gr_text "io0.in/urxd0"
 		(at 126.9 79.8 0)
 		(layer "B.SilkS")
 		(uuid "bac87e5f-7378-4112-9203-65c7290acf69")
