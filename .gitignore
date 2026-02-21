@@ -11,3 +11,4 @@ kicad/cnc_pendant_to_duet3d.bak
 *.lck
 kicad/_autosave-cnc_pendant_to_duet3d.kicad_pcb
 *.af
+*.af~lock~

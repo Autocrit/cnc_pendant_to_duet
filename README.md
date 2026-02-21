@@ -18,7 +18,7 @@ It follows the wiring diagram and instructions at [Duet3D CNC Pendant Documentat
 
 ## Ordering
 
-Upload `./kicad/production/cnc_pendant_to_duet3d.zip` to JLCPCB. In February 2026, 5 boards cost £3.60 including VAT and delivery to the UK.
+Production files are at `./kicad/production/cnc_pendant_to_duet3d.zip`. In February 2026, 5 boards from JLCPCB cost £3.60 including VAT and delivery to the UK.
 
 ## Choice of CNC pendant
 
@@ -94,7 +94,7 @@ e.g. Würth Elektronik WR-DSUB PCB [618015231121](https://www.we-online.com/en/c
 
 <img src="./images/618015231121_hole_pattern.png" width="800" />
 
-The mounting‑hole‑to‑board‑edge dimension appears to be a common one.
+The mounting‑hole‑to‑board‑edge dimension appears to be a common one; cheaper connectors from, for example, Ebay seem fine.
 
 ## Connecting to Duet 2 or 3
 
@@ -137,6 +137,10 @@ Anyone familiar with KiCad or PCB design should ignore this.
 1. I used the *Fabrication Toolkit* plugin to generate files for JLCPCB. As its going to be an unassembled board, only the ZIP file is important.
 
 I can help if you know the pinout but don't want to dive into KiCad.
+
+## Adding a D-Sub connector to the "standard" CNC pendant
+
+<img src="./images/da-15_solder.png" width="800" />
 
 ## TODO
 - test with Duet 2
