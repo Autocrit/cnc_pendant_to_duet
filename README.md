@@ -1,4 +1,4 @@
-# CNC Pendant D-Sub connector to Duet3D PCB
+# CNC Pendant D-Sub connector to Duet PCB
 
 <img src="./images/PXL_20260212_153638222.jpg" width="800" />
 
@@ -18,7 +18,7 @@ It follows the wiring diagram and instructions at [Duet3D CNC Pendant Documentat
 
 ## Ordering
 
-Production files are at `./kicad/production/cnc_pendant_to_duet3d.zip`. In February 2026, 5 boards from JLCPCB cost £3.60 including VAT and delivery to the UK.
+Production files are at `./kicad/production/cnc_pendant_to_duet.zip`. In February 2026, 5 boards from JLCPCB cost £3.60 including VAT and delivery to the UK.
 
 ## Choice of CNC pendant
 
